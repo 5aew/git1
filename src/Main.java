@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class Main {
     enum RNum{
         I("I",1),II("II",2),III("III",3),IV("IV",4),V("V",5),
@@ -28,7 +30,10 @@ class Main {
         }
     }
     public static void main(String[] args) {
-        System.out.println(calc("III * 10"));
+
+        Scanner scanner = new Scanner(System.in);
+        String inputString = scanner.nextLine();
+        System.out.println(calc(inputString));
     }
     //Решение должно содержать данный метод
     public static String calc(String inputString) {
